@@ -36,6 +36,23 @@ const employeeSchema = new mongoose.Schema({
     required: true,
     ref: 'managers',
   },
+  dailyReports: [
+    {
+      date: {
+        type: Date,
+        required: true,
+      },
+      control_id: {
+        type: String,
+      },
+      performanceData: {
+        type: String,
+      },
+      data: {
+        type: String,
+      },
+    },
+  ],
 })
 
 module.exports = mongoose.model('employees', employeeSchema)

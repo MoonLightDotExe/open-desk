@@ -104,6 +104,7 @@ const self = (module.exports = {
             clearance: body.clearance,
             biometrics: body.biometrics,
             manager: body.manager,
+            dailyReports: body.dailyReports,
           })
           resolve({
             id: employee._id,
