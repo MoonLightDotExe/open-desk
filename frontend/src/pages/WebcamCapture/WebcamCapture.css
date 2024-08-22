@@ -1,0 +1,31 @@
+.title{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.webcam-capture{
+    display: flex;
+    gap: 0;
+    align-items: center;
+    flex-direction: column;
+    height: 30rem;
+}
+.webcam-capture video{
+    margin: 0;
+}
+
+.app_input{
+    display: flex;
+    justify-content: center;
+}
+
+.web-button{
+    width: 7rem;
+    font-size: 1.2rem;
+    height: 2rem;
+    text-transform: uppercase;
+    background-color: #b37173;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
