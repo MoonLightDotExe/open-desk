@@ -11,4 +11,8 @@ authRouter.post('/addEmployee', auth_controllers.addEmployee)
 
 authRouter.post('/removeEmployee', auth_controllers.removeEmployee)
 
+authRouter.post('/loginManager', auth_controllers.loginManager)
+
+authRouter.post('/loginEmployee', auth_controllers.loginEmployee)
+
 module.exports = authRouter

@@ -32,29 +32,29 @@ const WebcamCapture = () => {
 
   return (
     <>
-      <h1 className="title">Monitor Employees</h1>
-      <div className="webcam-capture">
+      <h1 className='title'>Monitor Employees</h1>
+      <div className='webcam-capture'>
         <video
-          src=""
+          src=''
           height={HEIGHT}
           width={WIDTH}
           muted
           autoPlay
-          className="videofield"
+          className='videofield'
         ></video>
       </div>
-      <div className="app_input">
+      <div className='app_input'>
         {playing ? (
           <button
             onClick={stopVideo}
-            className="web-button"
+            className='web-button'
           >
             Stop
           </button>
         ) : (
           <button
             onClick={startVideo}
-            className="web-button"
+            className='web-button'
           >
             Start
           </button>

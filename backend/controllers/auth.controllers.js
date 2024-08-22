@@ -43,7 +43,7 @@ module.exports = {
       res.status(201).json({
         success: true,
         data,
-        message: 'Manager added successfully!',
+        message: 'Employee added successfully!',
       })
     } catch (err) {
       res.status(400).json({
@@ -53,6 +53,7 @@ module.exports = {
       })
     }
   },
+
   removeEmployee: async (req, res) => {
     try {
       const data = await auth_repo.removeEmployee(req.body)
@@ -61,6 +62,42 @@ module.exports = {
         success: true,
         data,
         message: 'Employee Removed successfully!',
+      })
+    } catch (err) {
+      res.status(400).json({
+        success: false,
+        err,
+        message: err.message,
+      })
+    }
+  },
+
+  loginManager: async (req, res) => {
+    try {
+      const data = await auth_repo.loginManager(req.body)
+
+      res.status(200).json({
+        success: true,
+        data,
+        message: 'Manager Logged In successfully!',
+      })
+    } catch (err) {
+      res.status(400).json({
+        success: false,
+        err,
+        message: err.message,
+      })
+    }
+  },
+
+  loginEmployee: async (req, res) => {
+    try {
+      const data = await auth_repo.loginEmployee(req.body)
+
+      res.status(200).json({
+        success: true,
+        data,
+        message: 'Employee Logged In successfully!',
       })
     } catch (err) {
       res.status(400).json({
