@@ -34,6 +34,10 @@ function App() {
               path="/add_employee"
               Component={AddEmployee}
             />
+            <Route
+            path='/videoPage'
+            Component={VideoPage}
+          />
           </Routes>
         </Router>
       </div>

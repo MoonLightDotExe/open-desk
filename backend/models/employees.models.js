@@ -42,9 +42,6 @@ const employeeSchema = new mongoose.Schema({
         type: Date,
         required: true,
       },
-      control_id: {
-        type: String,
-      },
       performanceData: {
         type: String,
       },

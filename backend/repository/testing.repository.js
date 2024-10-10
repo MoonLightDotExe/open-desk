@@ -10,9 +10,8 @@ const self = (module.exports = {
       try {
         const employee = await employees.findOne({ _id: body.id })
         if (body.control == 1) {
-          employee.dailyReports.push({
+          const report1 = employee.dailyReports.push({
             date: body.date,
-            control_id: body.control_id,
           })
           await employee.save()
           let _id
