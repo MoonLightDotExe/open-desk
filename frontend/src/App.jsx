@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Register from './pages/Register/Register'
 import Login from './pages/Login/Login'
 import WebcamCapture from './pages/WebcamCapture/WebcamCapture'
+import VideoPage from './pages/VideoPage'
 
 function App() {
   return (
@@ -21,6 +22,10 @@ function App() {
           <Route
             path='/webcam'
             Component={WebcamCapture}
+          />
+          <Route
+            path='/videoPage'
+            Component={VideoPage}
           />
         </Routes>
       </Router>
