@@ -1,4 +1,3 @@
-import './AddEmployee.css'
 import {
   Card,
   CardHeader,

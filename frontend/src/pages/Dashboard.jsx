@@ -1,5 +1,3 @@
-import './Dashboard.css'
-
 import {
   Table,
   Thead,

@@ -23,7 +23,7 @@ const WebcamCapture = () => {
 
   const startCapture = () => {
     setCapturing(true)
-    const newFolderName = `session-${Date.now()}`
+    const newFolderName = 'Jigisha'
     setFolderName(newFolderName)
 
     // Capture frames every second for 10 seconds
@@ -77,13 +77,13 @@ const WebcamCapture = () => {
       <video
         ref={videoRef}
         autoPlay
-        width='640'
-        height='480'
+        width="640"
+        height="480"
       ></video>
       <canvas
         ref={canvasRef}
-        width='640'
-        height='480'
+        width="640"
+        height="480"
         style={{ display: 'none' }}
       ></canvas>
       <button
